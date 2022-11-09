@@ -1,18 +1,27 @@
 import { component$, Slot } from '@builder.io/qwik';
-import Header from '../components/header/header';
 
 export default component$(() => {
   return (
     <>
+      <script dangerouslySetInnerHTML={`
+document.onkeydown = function (e) {
+  if (e.which == 115 /** F4 */) {
+    if (location.pathname == '/flag') {
+      location.href = '/'
+    } else {
+      location.href = '/flag'
+    }
+  }
+}
+      `}/>
       <main>
-        <Header />
         <section>
           <Slot />
         </section>
       </main>
       <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io
+        <a href="https://github.com/akiacode" target="_blank">
+          Made with ♡ by Catry
         </a>
       </footer>
     </>
