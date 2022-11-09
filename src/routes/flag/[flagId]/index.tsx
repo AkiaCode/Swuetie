@@ -1,14 +1,31 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useServerMount$, useStore } from "@builder.io/qwik";
 import { useLocation } from "@builder.io/qwik-city";
+import FlagPanel from "~/components/FlagPanel";
+
+interface Iflags {
+  id: string;
+  title: string;
+  body: string;
+}
 
 export default component$(() => {
-    const location = useLocation()
-    // id 마다 데이터 보여주는 거 가리기
-    const pathname = location.pathname.replace('/flag/', '')
-    switch (pathname) {
-        case 'base2000':
-            return <div>Hello word</div>
-        default:
-            return <div>Errno</div>
-    }
-})
+  const location = useLocation();
+  const f = useStore({
+    flags: null as Iflags[] | null,
+  });
+
+  useServerMount$(async () => {
+    f.flags = await (
+      await fetch(
+        location.href.replace(location.pathname, "") + `/flags.json`,
+        {}
+      )
+    ).json();
+  });
+
+  const pathname = location.pathname.replace("/flag/", "");
+  const flag = f.flags?.find((e) => e.id === pathname);
+
+  if (flag === undefined) return <>Errno</>;
+  else return <FlagPanel id={flag.id} title={flag.title} body={flag.body} />;
+});

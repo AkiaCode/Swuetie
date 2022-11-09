@@ -1,40 +1,53 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useServerMount$, useStore } from "@builder.io/qwik";
+import { useLocation } from "@builder.io/qwik-city";
+import TipMessage from "~/components/TipMessage";
+
+interface Iflags {
+  id: string;
+  title: string;
+  body: string;
+}
 
 export default component$(() => {
-  const List = [{
-    'id': 'base2000',
-    'title': '암호화된 문자를 복구화하시요.',
-    'body': 'asdasdas'
-  }, {
-    'id': 'forbase2000',
-    'title': '한결쿤 die스키',
-    'body': 'asdasd112as'
-  }, {
-    'id': 'base2000',
-    'title': 'test1000',
-    'body': 'asdasdas'
-  }];
+  const location = useLocation();
+
+  const f = useStore({
+    flags: null as Iflags[] | null,
+  });
+
+  useServerMount$(async () => {
+    f.flags = await (await fetch(location.href + `/flags.json`, {})).json();
+  });
 
   return (
-    <div style={{ 'display': 'flex', 'flexDirection': 'column' }}>
-      {/** 게시판 형태로 해서 routes마다 이동해서 찾도록 만들기 */}
-      <h1 style={{  'textAlign': 'center' }}>게시판</h1>
-      <div style={{
-        'display': 'flex',
-        'flexDirection': 'column'
-      }}>
-      {List.map(e=> {
-        return <a style={{
-          'textDecoration': 'none',
-          'color': 'black',
-          'border-radius': '1px',
-          'border-bottom': '1px solid #a0a0a0',
-          'fontSize': '24.80px',
-          'margin-top': '10px',
-        }} href={'flag/'+e.id}>{e.title}</a>
-      })}
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <h1
+        style={{
+          textAlign: "center",
+          "margin-bottom": "1em",
+          "font-family": "MaplestoryOTFBold",
+        }}
+      >
+        게시판
+      </h1>
+      <div class="list-group">
+        {f.flags === null ? (
+          <>Errno</>
+        ) : (
+          f.flags.map((e) => {
+            return (
+              <a
+                href={"/flag/" + e.id}
+                class="list-group-item list-group-item-action"
+                style={{ "text-overflow": "ellipsis" }}
+              >
+                {e.title}
+              </a>
+            );
+          })
+        )}
       </div>
+      <TipMessage message="F4를 누르면 flag 입력하는 페이지로 이동됩니다." />
     </div>
   );
 });
-
