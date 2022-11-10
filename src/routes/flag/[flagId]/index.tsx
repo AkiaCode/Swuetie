@@ -24,15 +24,21 @@ export default component$(() => {
     ).json();
   });
 
-  const pathname = location.pathname.replace("/flag/", "")
-  const flag = f.flags?.find((e) => e.id === pathname)
+  const pathname = location.pathname.replace("/flag/", "");
+  const flag = f.flags?.find((e) => e.id === pathname);
 
-  if (flag === undefined) return (<div>
+  if (flag === undefined)
+    return (
+      <div>
         <>Errno</>
         <TipMessage message="F2를 누르면 flag 입력하는 페이지로 이동됩니다." />
-  </div>)
-  else return (<div>
+      </div>
+    );
+  else
+    return (
+      <div>
         <FlagPanel id={flag.id} title={flag.title} body={flag.body} />
         <TipMessage message="F2를 누르면 flag 입력하는 페이지로 이동됩니다." />
-    </div>)
+      </div>
+    );
 });

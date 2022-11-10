@@ -12,7 +12,7 @@ const firebaseConfig = {
   projectId: "swuetie",
   storageBucket: "swuetie.appspot.com",
   messagingSenderId: "929287419162",
-  appId: "1:929287419162:web:1e505fef8e3d705e7a68a3"
+  appId: "1:929287419162:web:1e505fef8e3d705e7a68a3",
 };
 
 // Initialize Firebase

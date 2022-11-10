@@ -1,9 +1,10 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
     <>
-      <script dangerouslySetInnerHTML={`
+      <script
+        dangerouslySetInnerHTML={`
 document.onkeydown = function (e) {
   if (e.which == 113 /** F2 */) {
     if (location.pathname == '/flag') {
@@ -16,7 +17,8 @@ document.onkeydown = function (e) {
     }
   }
 }
-      `}/>
+      `}
+      />
       <main>
         <section>
           <Slot />
