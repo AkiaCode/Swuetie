@@ -9,7 +9,10 @@ document.onkeydown = function (e) {
     if (location.pathname == '/flag') {
       location.href = '/'
     } else {
-      location.href = '/flag'
+      $.getJSON("https://api.ipify.org?format=json", function(data) {
+        console.log(data.ip)
+        location.href = '/flag?ip=' + data.ip
+      })
     }
   }
 }

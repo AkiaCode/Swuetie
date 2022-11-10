@@ -27,6 +27,7 @@ export default component$(() => {
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
           crossOrigin="anonymous"
         />
+        <title>Swuetie</title>
       </head>
       <body lang="ko">
         <RouterOutlet />
@@ -36,6 +37,9 @@ export default component$(() => {
           integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
           crossOrigin="anonymous"
         ></script>
+        <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
       </body>
     </QwikCity>
   );
