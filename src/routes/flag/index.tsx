@@ -19,6 +19,7 @@ export default component$(() => {
     flags: null as Iflags[] | null,
   });
   const InputFlag = useStore({ input: null as unknown as string });
+  if (location.query.ip === undefined) return <>Errno</>
   if (!isIP(location.query.ip)) return <>Errno</>;
 
   useServerMount$(async () => {
@@ -84,24 +85,24 @@ export default component$(() => {
                 const user = list.find((e) => e.ip === location.query.ip);
 
                 if (user === undefined) {
+                  const users = list.map((e) => {
+                    return { ip: e.ip, clears: e.clears }
+                  })
+                  users.push({
+                    ip: location.query.ip,
+                    clears: [InputFlag.input],
+                  })
                   setDoc(doc(db, "flags", "list"), {
-                    users: [
-                      {
-                        ip: location.query.ip,
-                        clears: [InputFlag.input],
-                      },
-                    ],
+                    users: users
                   });
                 } else {
                   if (!user.clears.includes(InputFlag.input)) {
                     user.clears.push(InputFlag.input);
+                    const users = list.map((e) => {
+                      return { ip: e.ip, clears: e.clears }
+                    })
                     setDoc(doc(db, "flags", "list"), {
-                      users: [
-                        {
-                          ip: location.query.ip,
-                          clears: user.clears,
-                        },
-                      ],
+                      users: users
                     });
                   }
                 }
