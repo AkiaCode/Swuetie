@@ -5,7 +5,7 @@ export default component$(() => {
     <>
       <script dangerouslySetInnerHTML={`
 document.onkeydown = function (e) {
-  if (e.which == 115 /** F4 */) {
+  if (e.which == 113 /** F2 */) {
     if (location.pathname == '/flag') {
       location.href = '/'
     } else {

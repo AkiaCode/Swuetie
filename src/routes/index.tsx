@@ -47,7 +47,7 @@ export default component$(() => {
           })
         )}
       </div>
-      <TipMessage message="F4를 누르면 flag 입력하는 페이지로 이동됩니다." />
+      <TipMessage message="F2를 누르면 flag 입력하는 페이지로 이동됩니다." />
     </div>
   );
 });

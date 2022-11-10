@@ -116,7 +116,7 @@ export default component$(() => {
             </tbody>
         })}
       </table>
-      <TipMessage message="F4를 누르면 메인 페이지로 이동됩니다." />
+      <TipMessage message="F2를 누르면 메인 페이지로 이동됩니다." />
     </div>
   );
 });
