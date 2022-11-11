@@ -2,6 +2,7 @@
   "version": 1,
   "include": ["/*"],
   "exclude": [
+    "/flags.json",
     "/assets/*",
     "/build/*",
     "/favicon.ico",
