@@ -44,25 +44,25 @@
   {
     "id": "middle3",
     "title": "MD3: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
-    "body": "&nbsp;print('Codit')",
+    "body": "&nbsp;&nbsp;print('Codit')",
     "answer": "Error"
   },
   {
     "id": "middle4",
     "title": "MD4: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
-    "body": "n = 5\nif n == 2:\n&nbsp;print('Python!')\nelse:\n&nbsp;print('Codit')",
+    "body": "n = 5<br/>if n == 2:<br/>&nbsp;&nbsp;print('Python!')<br/>else:<br/>&nbsp;&nbsp;print('Codit')",
     "answer": "Codit"
   },
   {
     "id": "middle5",
     "title": "MD5: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
-    "body": "print('Codit2021', , end='')\nprint('Codit2022', end='')",
+    "body": "print('Codit2021', , end='')<br/>print('Codit2022', end='')",
     "answer": "Codit2021Codit2022"
   },
   {
     "id": "middle6",
     "title": "MD6: 이것은 어떤 단어일까요?",
-    "body": "OO OOO의 제한\n1. 시사 보도를 위한 이용\n2. 시험 문제를 위한 이용\n3. 학교 교육 목적을 위한 이용\n4. 영리 목적이 아닌 공연\n5. 재판 절차, 행정, 입법 과정\n6. 시각 장애인을 위한 점자",
+    "body": "OO OOO의 제한<br/>1. 시사 보도를 위한 이용<br/>2. 시험 문제를 위한 이용<br/>3. 학교 교육 목적을 위한 이용<br/>4. 영리 목적이 아닌 공연<br/>5. 재판 절차, 행정, 입법 과정<br/>6. 시각 장애인을 위한 점자",
     "answer": "저작 재산권"
   },
   {
