@@ -56,8 +56,8 @@
   {
     "id": "middle5",
     "title": "MD5: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
-    "body": "print('Codit2021', end='')<br/>print('Codit2022', end='')",
-    "answer": "Codit2021Codit2022"
+    "body": "print('Codit2022', end='')",
+    "answer": "Codit2022"
   },
   {
     "id": "middle6",
@@ -69,54 +69,54 @@
     "id": "middle7",
     "title": "MD7: 이것은 어떤 단어일까요?",
     "body": "OO OO는 이동성이 있는 물건이나 개인이 특정 시간에 존재하거나 존재하였던 장소에 대한 정보이다.",
-    "answer": "aaa"
+    "answer": "위치 정보"
   },
   {
     "id": "middle8",
     "title": "MD8: 이것은 어떤 단어일까요?",
-    "body": "sss",
-    "answer": "aaa"
+    "body": "OO OO란 살아 있는 개인에 관한 정보로 이름, 주민 등록 번호, 전화번호 등 개인을 알아볼 수 있는 정보를 말한다.",
+    "answer": "개인 정보"
   },
   {
     "id": "middle9",
     "title": "MD9: 이것은 어떤 단어일까요?",
-    "body": "sss",
-    "answer": "aaa"
+    "body": "OOO은 사람의 사상이나 감정을 표현한 저작물에 대해 저작권자가 가지는 권리를 말한다.",
+    "answer": "저작권"
   },
   {
     "id": "middle10",
     "title": "MD10: 이것은 어떤 단어일까요?",
-    "body": "sss",
+    "body": "OOO은 자신의 창작물을 일정한 조건 하에 다른 사람의 자유로운 이용을 허락하는 라이선스이다.",
+    "answer": "CCL"
+  },
+  {
+    "id": "hard1",
+    "title": "HD1: 이것은 어떤 단어일까요?",
+    "body": "이것은 여러 구성원이 공유하고 사용할 수 있도록 관련 자료를 통합하여 저장한 데이터의 집합이다.",
     "answer": "aaa"
   },
   {
     "id": "hard1",
-    "title": "HD1: ",
-    "body": "sss",
-    "answer": "aaa"
-  },
-  {
-    "id": "hard1",
-    "title": "HD2: ",
-    "body": "sss",
-    "answer": "aaa"
+    "title": "HD2: 이 언어는 무엇일까요?",
+    "body": "이 언어는 데이터베이스를 구축하고 활용하기 위해 사용하는 언어이다.",
+    "answer": "SQL"
   },
   {
     "id": "hard2",
-    "title": "HD3: ",
-    "body": "sss",
-    "answer": "aaa"
+    "title": "HD3: 여기에 들어갈 알맞는 단어는?",
+    "body": "SQL문에서 필드 이름과 같은 표의 속성은 이것를, 자료값은 작은 이것을 붙여 사용한다.",
+    "answer": "따옴표"
   },
   {
     "id": "hard3",
-    "title": "HD4: ",
-    "body": "sss",
-    "answer": "aaa"
+    "title": "HD4: 여기에 들어갈 알맞는 단어는?",
+    "body": "이것은 이러한 과정을 통해 해결해야 할 문제의 복잡성을 효과적으로 줄이는 과정을 말한다.",
+    "answer": "추상화"
   },
   {
     "id": "hard4",
-    "title": "HD5: ",
-    "body": "sss",
-    "answer": "aaa"
+    "title": "HD5: 여기에 들어갈 알맞는 단어는? (답이 여러 단어일 땐, 쉼표로 표시한다| OOO,OOO)",
+    "body": "이 방식은 이것들의 집합으로 그림을 표현하고, 이 방식은 점, 선, 면등의 수학적 수식으로 그림을 표현한다.",
+    "answer": "비트맵,화소,벡터"
   }
 ]
