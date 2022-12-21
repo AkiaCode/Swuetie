@@ -7,6 +7,7 @@ interface Iflags {
   id: string;
   title: string;
   body: string;
+  answer: string
 }
 
 export default component$(() => {
@@ -31,14 +32,13 @@ export default component$(() => {
     return (
       <div>
         <>Errno</>
-        <TipMessage message="F2를 누르면 flag 입력하는 페이지로 이동됩니다." />
       </div>
     );
   else
     return (
       <div>
-        <FlagPanel id={flag.id} title={flag.title} body={flag.body} />
-        <TipMessage message="F2를 누르면 flag 입력하는 페이지로 이동됩니다." />
+        <FlagPanel id={flag.id} title={flag.title} body={flag.body} answer={flag.answer} />
+        <TipMessage message="고1 정보 교과서에 있는 내용들로 출제되었습니다." />
       </div>
     );
 });

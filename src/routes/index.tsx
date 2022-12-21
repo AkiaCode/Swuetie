@@ -28,7 +28,7 @@ export default component$(() => {
           "font-family": "MaplestoryOTFBold",
         }}
       >
-        게시판
+        코딩 문제
       </h1>
       <div class="list-group">
         {f.flags === null ? (
@@ -47,7 +47,7 @@ export default component$(() => {
           })
         )}
       </div>
-      <TipMessage message="F2를 누르면 flag 입력하는 페이지로 이동됩니다." />
+      <TipMessage message="고1 정보 교과서에 있는 내용들로 출제되었습니다." />
     </div>
   );
 });

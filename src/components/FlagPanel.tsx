@@ -1,7 +1,13 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStore } from "@builder.io/qwik";
 
 export default component$(
-  (props: { id: string; title: string; body: string }) => {
+  (props: { id: string; title: string; body: string, answer: string }) => {
+
+    const f = useStore({
+      answer: "",
+      isAnswer: false
+    });
+
     return (
       <div>
         <h1
@@ -22,6 +28,18 @@ export default component$(
           </div>
           <div class="card-body">
             <p class="card-text">{props.body}</p>
+            <div style={{ textAlign: "center" }}>
+              { f.isAnswer ? <>정답!!</> : <><input type="text" placeholder={props.answer} onChange$={(e) => {
+                if (props.answer === e.target.value) {
+                  f.answer = e.target.value
+                }
+              }}/>
+              <button onClick$={() => {
+                if (props.answer === f.answer) {
+                  f.isAnswer = true
+                }
+               }}>제출!</button></> }
+            </div>
           </div>
         </div>
       </div>
