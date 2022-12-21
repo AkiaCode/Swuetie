@@ -29,7 +29,7 @@ export default component$(
           <div class="card-body">
             <p class="card-text">{props.body}</p>
             <div style={{ textAlign: "center" }}>
-              { f.isAnswer ? <>정답!!</> : <><input type="text" placeholder={props.answer} onChange$={(e) => {
+              { f.isAnswer ? <>정답!!</> : <><input type="text" placeholder={"정답을 입력해주세요."} onChange$={(e) => {
                 if (props.answer === e.target.value) {
                   f.answer = e.target.value
                 }
