@@ -1,7 +1,121 @@
 [
   {
-    "id": "ff",
-    "title": "aa",
+    "id": "easy1",
+    "title": "EZ1: 이것은 무엇을 뜻할까요?",
+    "body": "OO OO는 경제 및 사회, 문화 활동에서 정보의 생산, 공유, 활용이 중요한 역할을 하는 사회을 의미한다.",
+    "answer": "정보 사회"
+  },
+  {
+    "id": "easy2",
+    "title": "EZ2: 이것은 어떤 분야일까요?",
+    "body": "OO OO은 정보의 특성과 행위에 대한 과학적 이론을 다루는 분야이다.",
+    "answer": "정보 과학"
+  },
+  {
+    "id": "easy3",
+    "title": "EZ3: 이것의 용어는 무엇일까요?",
+    "body": "O OOO는 디지털 환경에서 생성되는 텍스트를 포함한 대용량 데이터의 집합입니다.",
+    "answer": "빅 데이터"
+  },
+  {
+    "id": "easy4",
+    "title": "EZ4: 이 단어는 무엇일까요?",
+    "body": "OO OO은 허락되지 않는 접근, 사용, 위조, 변조 등으로부터 정보와 정보 시스템을 보호합니다.",
+    "answer": "정보 보안"
+  },
+  {
+    "id": "easy5",
+    "title": "EZ5: 이 직업은 무엇입니까?",
+    "body": "OOOOO OOO는 새로운 기능과 성능을 갖춘 소프트웨어를 계획하고 분석, 설계한다. 또 개발된 소프트웨어가 사용자의 기대 수준과 요구 사항에 맞게 구현 되었는지 성능을 평가한다.",
+    "answer": "소프트웨어 개발자"
+  },
+  {
+    "id": "middle1",
+    "title": "MD1: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
+    "body": "print('Hello world\")",
+    "answer": "Error"
+  },
+  {
+    "id": "middle2",
+    "title": "MD2: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
+    "body": "print('H'*5)",
+    "answer": "HHHHH"
+  },
+  {
+    "id": "middle3",
+    "title": "MD3: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
+    "body": "  print('Codit')",
+    "answer": "Error"
+  },
+  {
+    "id": "middle4",
+    "title": "MD4: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
+    "body": "n = 5<br/>if n == 2:<br/>  print('Python!')<br/>else:<br/> print('Codit')",
+    "answer": "Codit"
+  },
+  {
+    "id": "middle5",
+    "title": "MD5: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
+    "body": "print('Codit2021', , end='')<br/>print('Codit2022', end='')",
+    "answer": "Codit2021Codit2022"
+  },
+  {
+    "id": "middle6",
+    "title": "MD6: 이것은 어떤 단어일까요?",
+    "body": "OO OOO의 제한<br/>1. 시사 보도를 위한 이용<br/>2. 시험 문제를 위한 이용<br/>3. 학교 교육 목적을 위한 이용<br/>4. 영리 목적이 아닌 공연<br/>5. 재판 절차, 행정, 입법 과정<br/>6. 시각 장애인을 위한 점자",
+    "answer": "저작 재산권"
+  },
+  {
+    "id": "middle7",
+    "title": "MD7: 이것은 어떤 단어일까요?",
+    "body": "OO OO는 이동성이 있는 물건이나 개인이 특정 시간에 존재하거나 존재하였던 장소에 대한 정보이다.",
+    "answer": "aaa"
+  },
+  {
+    "id": "middle8",
+    "title": "MD8: 이것은 어떤 단어일까요?",
+    "body": "sss",
+    "answer": "aaa"
+  },
+  {
+    "id": "middle9",
+    "title": "MD9: 이것은 어떤 단어일까요?",
+    "body": "sss",
+    "answer": "aaa"
+  },
+  {
+    "id": "middle10",
+    "title": "MD10: 이것은 어떤 단어일까요?",
+    "body": "sss",
+    "answer": "aaa"
+  },
+  {
+    "id": "hard1",
+    "title": "HD1: ",
+    "body": "sss",
+    "answer": "aaa"
+  },
+  {
+    "id": "hard1",
+    "title": "HD2: ",
+    "body": "sss",
+    "answer": "aaa"
+  },
+  {
+    "id": "hard2",
+    "title": "HD3: ",
+    "body": "sss",
+    "answer": "aaa"
+  },
+  {
+    "id": "hard3",
+    "title": "HD4: ",
+    "body": "sss",
+    "answer": "aaa"
+  },
+  {
+    "id": "hard4",
+    "title": "HD5: ",
     "body": "sss",
     "answer": "aaa"
   }
