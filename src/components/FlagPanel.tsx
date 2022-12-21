@@ -1,4 +1,5 @@
 import { component$, useStore } from "@builder.io/qwik";
+import toHtml from 'string-to-html';
 
 export default component$(
   (props: { id: string; title: string; body: string, answer: string }) => {
@@ -27,7 +28,7 @@ export default component$(
             {props.title}
           </div>
           <div class="card-body">
-            <p class="card-text">{props.body.replace("&nbsp;", " ").replace("\n", "<br/>")}</p>
+            <p class="card-text">{toHtml(props.body.replace("\n", "<br/>"))}</p>
             <div style={{ textAlign: "center" }}>
               { f.isAnswer ? <>정답!!</> : <><input type="text" placeholder={"정답을 입력해주세요."} onChange$={(e) => {
                 if (props.answer === e.target.value) {
