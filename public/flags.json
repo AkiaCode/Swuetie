@@ -56,8 +56,8 @@
   {
     "id": "middle5",
     "title": "MD5: 파이썬 코드가 출력된 것을 입력하세요. (에러일 경우, 'Error'로 입력)",
-    "body": "print('Codit2022', end='')",
-    "answer": "Codit2022"
+    "body": "print('Codit2021', end='');print('Codit2022', end='')",
+    "answer": "Codit2021Codit2022"
   },
   {
     "id": "middle6",
@@ -115,7 +115,7 @@
   },
   {
     "id": "hard4",
-    "title": "HD5: 여기에 들어갈 알맞는 단어는? (답이 여러 단어일 땐, 쉼표로 표시한다| OOO,OOO)",
+    "title": "HD5: 여기에 들어갈 알맞는 단어는? (답이 여러 단어일 땐, 쉼표로 표시한다. 예시: OOO,OOO)",
     "body": "이 방식은 이것들의 집합으로 그림을 표현하고, 이 방식은 점, 선, 면등의 수학적 수식으로 그림을 표현한다.",
     "answer": "비트맵,화소,벡터"
   }
